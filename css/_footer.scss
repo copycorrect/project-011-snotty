@@ -1,0 +1,27 @@
+.footer-container {
+  background-color: $black;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  @media (min-width: 960px) {
+    padding: 30px;
+  }
+}
+.fotter-social {
+  margin-bottom: 26px;
+}
+.social-item {
+  width: 23px;
+  height: 23px;
+  margin-right: 20px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+a:last-child .social-item {
+  margin-right: 0;
+}
+.fotter-copy {
+  color: $text;
+}

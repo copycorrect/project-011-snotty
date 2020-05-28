@@ -1,0 +1,93 @@
+.header-container {
+  background-color: $bg-light;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  font-size: 50px;
+  font-style: italic;
+  a {
+    text-decoration: none;
+    color: $accent;
+  }
+}
+.nav-list {
+  padding: 0;
+  margin: 0;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 80%;
+    min-height: 100vh;
+    background-color: $bg-dark;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.nav-list-active {
+  @media (max-width: 767px) {
+    right: 0;
+  }
+}
+.nav {
+  li {
+    list-style: none;
+
+    @media (min-width: 768px) {
+      margin-left: 5px;
+    }
+    @media (min-width: 960px) {
+      margin-left: 10px;
+    }
+  }
+}
+.iconNav {
+  display: block;
+  position: absolute;
+  background-image: url(../img/menu_icon.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  right: 0;
+  top: 0;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.iconNavDeactive {
+  background-image: url(../img/menu-x.svg);
+  background-size: 50%;
+}
+.nav-list-item {
+  display: block;
+  color: $text;
+  text-decoration: none;
+  transition: background-color 0.7s;
+  padding: 15px;
+  text-align: center;
+
+  &:hover {
+    background-color: $accent;
+    color: $white;
+    transition: color 0.7s;
+  }
+  @media (min-width: 768px) {
+    padding: 40px 5px 10px;
+  }
+  @media (min-width: 960px) {
+    padding: 70px 15px 20px;
+  }
+}

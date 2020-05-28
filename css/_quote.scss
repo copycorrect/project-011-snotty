@@ -1,0 +1,43 @@
+.quote-container {
+  background-color: $black;
+  .quote-item-title {
+    margin-bottom: 20px;
+  }
+}
+.quote {
+  padding: 30px 10px;
+  @media (min-width: 767px) {
+    padding: 50px 10px;
+  }
+  @media (min-width: 960px) {
+    padding: 50px 5px;
+  }
+}
+.quote-block {
+  display: flex;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.quote-item:first-child {
+  margin-right: 60px;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+.quote-get {
+  padding: 25px 135px;
+  background-color: $accent;
+  color: $white;
+  text-align: center;
+  line-height: 1;
+  outline: none;
+  border: 1px solid $accent;
+  @media (max-width: 425px) {
+    padding: 25px 90px;
+  }
+}

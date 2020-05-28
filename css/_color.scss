@@ -1,0 +1,22 @@
+$accent: #0093b7;
+$text: #bfbfbf;
+$title: #a3a3a3;
+$placeholder: #aeaeae;
+$black: #000000;
+$white: #ffffff;
+$bg-light: #4b4b4b;
+$bg-dark: #3b3b3b;
+$border-top: #808080;
+
+.accent {
+  color: $accent;
+}
+.content,
+.servises-item-description,
+.portfolio-nav-list {
+  color: $text;
+}
+
+.portfolio-nav-list:hover {
+  color: $white;
+}

@@ -1,0 +1,115 @@
+.dolor-container {
+  background: linear-gradient(to bottom, $bg-dark 75%, $black 75%);
+  @media (max-width: 960px) {
+    background: linear-gradient(to bottom, $bg-dark 80%, $black 80%);
+  }
+  @media (max-width: 425px) {
+    background: linear-gradient(to bottom, $bg-dark 85%, $black 85%);
+  }
+  .container {
+    background-image: url(../img/smartphone.png);
+    background-repeat: no-repeat;
+    background-position: 100% 70px;
+    background-size: auto;
+    @media (max-width: 960px) {
+      background: none;
+    }
+  }
+}
+.dolor {
+  padding: 30px 20px;
+  @media (min-width: 767px) {
+    padding: 50px 20px;
+  }
+  @media (min-width: 960px) {
+    padding: 190px 5px 90px;
+  }
+}
+.dolor-title,
+.dolor-content,
+.dolor-list {
+  width: 50%;
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+}
+.dolor-content {
+  margin-bottom: 40px;
+  @media (max-width: 960px) {
+    margin-bottom: 20px;
+  }
+}
+.dolor-item {
+  position: relative;
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid $border-top;
+  }
+
+  label {
+    display: inline-block;
+    width: 100%;
+    padding: 24px 0;
+    position: relative;
+    &::before {
+      display: block;
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      line-height: 18px;
+    }
+  }
+  input:checked + label::before {
+    content: "-";
+    top: 45%;
+  }
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+.dolor-item-content {
+  padding: 3px 0 15px;
+  display: none;
+}
+input:checked ~ .dolor-item-content {
+  display: block;
+}
+.dolor-list {
+  margin-bottom: 300px;
+  @media (max-width: 960px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 425px) {
+    margin-bottom: 60px;
+  }
+}
+.dolor-click {
+  width: 50%;
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+  a {
+    display: block;
+    width: 100%;
+    background-color: $accent;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 0;
+    text-align: center;
+    &:hover {
+      color: $black;
+    }
+  }
+}

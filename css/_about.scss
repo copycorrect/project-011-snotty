@@ -1,0 +1,30 @@
+.about-container {
+  background-color: $black;
+  .container {
+    text-align: justify;
+  }
+  .title-block {
+    margin-bottom: 40px;
+  }
+}
+.about {
+  text-align: center;
+  padding: 50px 10px;
+  @media (min-width: 767px) {
+    padding: 100px 10px;
+  }
+  @media (min-width: 960px) {
+    padding: 130px 5px;
+  }
+}
+.about-info {
+  display: inline-block;
+  color: $title;
+  padding: 7px 0;
+  border-top: 1px solid $border-top;
+  margin-bottom: 20px;
+  text-align: center;
+  @media (min-width: 960px) {
+    margin-bottom: 40px;
+  }
+}

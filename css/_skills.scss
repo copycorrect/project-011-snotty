@@ -1,0 +1,98 @@
+.skills-container {
+  background-color: $bg-light;
+  .content,
+  .title-block {
+    color: $white;
+  }
+  .title-block {
+    margin-bottom: 26px;
+  }
+}
+.skills {
+  padding: 30px 10px;
+  color: $white;
+  @media (min-width: 767px) {
+    padding: 50px 10px;
+  }
+  @media (min-width: 960px) {
+    padding: 80px 5px 80px;
+  }
+}
+.skills-info {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.skills-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 60px;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
+.skills-item-title {
+  margin-bottom: 40px;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+}
+.skills-progress-bar {
+  padding-right: 15px;
+}
+.skills-progress {
+  margin-bottom: 80px;
+}
+.skills-name {
+  margin-bottom: 10px;
+}
+.progress {
+  width: 100%;
+  height: 10px;
+  background-color: $white;
+  box-shadow: inset -0.7px 0.7px 1px 0px rgba(31, 28, 29, 0.33);
+}
+.progress-item {
+  display: block;
+  background-color: $accent;
+  height: 10px;
+  position: relative;
+  &::after {
+    display: block;
+    position: absolute;
+    padding: 0 0 15px 5px;
+    border-left: 1px solid $accent;
+    bottom: 0;
+    left: 100%;
+    color: $accent;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+.progress-66 {
+  width: 66%;
+  &::after {
+    content: "66%";
+  }
+}
+.progress-75 {
+  width: 75%;
+  &::after {
+    content: "75%";
+  }
+}
+.progress-85 {
+  width: 85%;
+  &::after {
+    content: "85%";
+  }
+}
+.progress-91 {
+  width: 91%;
+  &::after {
+    content: "91%";
+  }
+}
