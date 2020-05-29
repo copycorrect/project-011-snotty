@@ -27,6 +27,7 @@
     width: 80%;
     min-height: 100vh;
     background-color: $bg-dark;
+    z-index: 20;
   }
   @media (min-width: 768px) {
     display: flex;

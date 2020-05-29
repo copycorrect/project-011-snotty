@@ -15,7 +15,13 @@
     }
   }
   .content {
-    margin-bottom: 110px;
+    margin-bottom: 30px;
+    @media (min-width: 767px) {
+      margin-bottom: 70px;
+    }
+    @media (min-width: 960px) {
+      margin-bottom: 110px;
+    }
   }
 }
 .servises {

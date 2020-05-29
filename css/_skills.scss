@@ -19,8 +19,14 @@
   }
 }
 .skills-info {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   text-align: center;
+  @media (min-width: 767px) {
+    margin-bottom: 50px;
+  }
+  @media (min-width: 960px) {
+    margin-bottom: 80px;
+  }
 }
 .skills-block {
   display: grid;
