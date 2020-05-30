@@ -37,11 +37,11 @@
   p {
     padding: 20px 16px;
     color: $white;
-    @media (max-width: 767px) {
+    @media (max-width: 959px) {
       display: none;
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 959px) {
     opacity: 1;
     background-color: rgba($black, 0.4);
     visibility: visible;

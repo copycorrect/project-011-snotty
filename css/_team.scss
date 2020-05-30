@@ -23,15 +23,12 @@
 .team-block {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  @media (min-width: 768px) {
+  align-items: center;
+  @media (min-width: 550px) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
-  // @media (min-width: 960px) {
-  //   flex-direction: row;
-  // }
 }
 .team-item {
   width: 100%;
@@ -49,7 +46,7 @@
       opacity: 1;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 550px) {
     width: 40%;
   }
   @media (min-width: 960px) {
