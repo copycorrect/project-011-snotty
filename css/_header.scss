@@ -1,5 +1,9 @@
 .header-container {
-  background-color: $bg-light;
+  background-color: $bg-dark;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
 }
 .header {
   display: flex;
@@ -10,8 +14,7 @@
 .logo {
   font-size: 50px;
   font-style: italic;
-  a {
-    text-decoration: none;
+  span {
     color: $accent;
   }
 }
@@ -23,10 +26,10 @@
     flex-direction: column;
     position: absolute;
     top: 100%;
-    right: -100%;
+    left: -100%;
     width: 80%;
     min-height: 100vh;
-    background-color: $bg-dark;
+    background-color: $white;
     z-index: 20;
   }
   @media (min-width: 768px) {
@@ -38,6 +41,7 @@
 .nav-list-active {
   @media (max-width: 767px) {
     right: 0;
+    left: auto;
   }
 }
 .nav {
@@ -74,7 +78,7 @@
 }
 .nav-list-item {
   display: block;
-  color: $text;
+  color: $title;
   text-decoration: none;
   transition: background-color 0.7s;
   padding: 15px;
