@@ -49,6 +49,7 @@ navList.forEach(function (item) {
       behavior: "smooth",
     });
     nav.classList.remove("nav-list-active");
+    icon.classList.remove("iconNavDeactive");
   });
 });
 let logo = document.querySelector(".logo");
